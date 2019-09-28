@@ -1,47 +1,43 @@
 <!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>GitHub Home page</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <h1>Jonah Brennan</h1>
+  <header>
+    <h1>JSB Bio</h1>
+  </header>
 
-  <img src="https://placehold.it/200x200" alt="Jonah Brennan">
+  <main class="container">
+    
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">JS Beaver</h2>
+        <img id="bio-image" height=200 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg" alt="Your Name">
+      </section>
+      <p>Middle Aged Beaver who enjoys building damns.</p>
+    </section>
 
-  <p>I am a human.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:jonahbrennan@gmail.com">jonahbrennan@gmail.com</a></li>
+        <li><strong>Github:</strong> <a target="_blank"  href="https://github.com/jonahbrennan/">GitHub</a></li>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">passage420@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">https://github.com/jonahbrennan/</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
+        <li><strong>Portfolio:</strong> <a target="_blank" href="http://tacticalartist.byethost6.com/?i=1">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
